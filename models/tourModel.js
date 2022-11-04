@@ -184,7 +184,6 @@ tourSchema.pre('aggregate', function (next) {
 });
 
 tourSchema.post(/^find/, function (docs, next) {
-  //console.log(docs);
   console.log(`This Query took ${Date.now() - this.start} miliseconds`);
   next();
 });
