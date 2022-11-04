@@ -1,0 +1,26 @@
+doctype html
+html 
+    head 
+        block head 
+            title Natours | #{title}
+            meta(charset='UTF-8') 
+            meta(name='viewport' content='width=device-width, initial-scale=1.0') 
+            //- meta(http-equiv='Content-Security-Policy' content='default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** ')
+            link(rel='stylesheet' href='/css/style.css')
+            link(rel='shortcut icon' type='/image/png' href='img/favicon.png')
+            link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+            
+    body
+        // HEADER
+        include _header
+
+        // CONTENT
+        block content 
+            h1 This is a placeholder heading
+
+        // FOOTER
+        include _footer
+
+        script(src='https://js.stripe.com/v3/')
+        //- script(src='https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch')
+        script(src='/js/bundle.js')
