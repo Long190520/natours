@@ -25,7 +25,7 @@ mongoose
   });
 
 const port = process.env.PORT || 3000;
-const hostname = 'localhost';
+const hostname = '0.0.0.0';
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at ${port}`);
 });
