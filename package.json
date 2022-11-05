@@ -54,8 +54,5 @@
     "nodemon": "^2.0.19",
     "parcel-bundler": "^1.12.5",
     "prettier": "^2.7.1"
-  },
-  "engines": {
-    "node": ">=10.0.0"
   }
 }
